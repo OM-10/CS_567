@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-02 11:24:45 by Eclipse SUMO netconvert Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="inter.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="righthand"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="1"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<tlLogics version="1.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tllogic_file.xsd">
+    <tlLogic id="B1" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGggrrrrrGGGGggrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrryyyyyyrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGggrrrrrrGGGgg"/>
+        <phase duration="3"  state="rrrrrryyyyyrrrrrryyyyy"/>
+    </tlLogic>
+
+    <connection from="A1B1" to="B1B0" fromLane="0" toLane="0" tl="B1" linkIndex="17"/>
+    <connection from="A1B1" to="B1C1" fromLane="0" toLane="0" tl="B1" linkIndex="18"/>
+    <connection from="A1B1" to="B1C1" fromLane="1" toLane="1" tl="B1" linkIndex="19"/>
+    <connection from="A1B1" to="B1B2" fromLane="1" toLane="2" tl="B1" linkIndex="20"/>
+    <connection from="A1B1" to="B1A1" fromLane="1" toLane="1" tl="B1" linkIndex="21"/>
+    <connection from="B0B1" to="B1C1" fromLane="0" toLane="0" tl="B1" linkIndex="11"/>
+    <connection from="B0B1" to="B1B2" fromLane="0" toLane="0" tl="B1" linkIndex="12"/>
+    <connection from="B0B1" to="B1B2" fromLane="1" toLane="1" tl="B1" linkIndex="13"/>
+    <connection from="B0B1" to="B1B2" fromLane="2" toLane="2" tl="B1" linkIndex="14"/>
+    <connection from="B0B1" to="B1A1" fromLane="2" toLane="1" tl="B1" linkIndex="15"/>
+    <connection from="B0B1" to="B1B0" fromLane="2" toLane="2" tl="B1" linkIndex="16"/>
+    <connection from="B2B1" to="B1A1" fromLane="0" toLane="0" tl="B1" linkIndex="0"/>
+    <connection from="B2B1" to="B1B0" fromLane="0" toLane="0" tl="B1" linkIndex="1"/>
+    <connection from="B2B1" to="B1B0" fromLane="1" toLane="1" tl="B1" linkIndex="2"/>
+    <connection from="B2B1" to="B1B0" fromLane="2" toLane="2" tl="B1" linkIndex="3"/>
+    <connection from="B2B1" to="B1C1" fromLane="2" toLane="1" tl="B1" linkIndex="4"/>
+    <connection from="B2B1" to="B1B2" fromLane="2" toLane="2" tl="B1" linkIndex="5"/>
+    <connection from="C1B1" to="B1B2" fromLane="0" toLane="0" tl="B1" linkIndex="6"/>
+    <connection from="C1B1" to="B1A1" fromLane="0" toLane="0" tl="B1" linkIndex="7"/>
+    <connection from="C1B1" to="B1A1" fromLane="1" toLane="1" tl="B1" linkIndex="8"/>
+    <connection from="C1B1" to="B1B0" fromLane="1" toLane="2" tl="B1" linkIndex="9"/>
+    <connection from="C1B1" to="B1C1" fromLane="1" toLane="1" tl="B1" linkIndex="10"/>
+</tlLogics>

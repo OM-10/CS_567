@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 02/09/21 23:26:11 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="I:\STUDY\BE_PROJECT\SUMO\intersection_6\inter.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="I:\STUDY\BE_PROJECT\SUMO\intersection_6\inter.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="true"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="I:\STUDY\BE_PROJECT\SUMO\intersection_6\edetect.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+	<entryExitDetector id="e3_1" freq="900" file="out_e3" timeThreshold="5.00" speedThreshold="5.00">
+      <detEntry lane="B0B1_0" pos="35.00" friendlyPos="true"/>
+      <detEntry lane="B0B1_1" pos="35.00" friendlyPos="true"/>
+	  <detEntry lane="B0B1_2" pos="35.00" friendlyPos="true"/>
+      <detExit lane="B0B1_0" pos="100.00" friendlyPos="true"/>
+      <detExit lane="B0B1_1" pos="100.00" friendlyPos="true"/>
+	  <detExit lane="B0B1_2" pos="100.00" friendlyPos="true"/>
+    </entryExitDetector>
+
+    <entryExitDetector id="e3_2" freq="900" file="out_e3" timeThreshold="5.00" speedThreshold="5.00">
+      <detEntry lane="C1B1_0" pos="35.00" friendlyPos="true"/>
+      <detEntry lane="C1B1_1" pos="35.00" friendlyPos="true"/>
+	  <!-- <detEntry lane="C1B1_2" pos="35.00" friendlyPos="true"/> -->
+      <detExit lane="C1B1_0" pos="100.00" friendlyPos="true"/>
+      <detExit lane="C1B1_1" pos="100.00" friendlyPos="true"/>
+	  <!-- <detExit lane="C1B1_2" pos="100.00" friendlyPos="true"/> -->
+    </entryExitDetector>
+
+    <entryExitDetector id="e3_3" freq="900" file="out_e3" timeThreshold="5.00" speedThreshold="5.00">
+      <detEntry lane="B2B1_0" pos="35.00" friendlyPos="true"/>
+      <detEntry lane="B2B1_1" pos="35.00" friendlyPos="true"/>   
+	  <detEntry lane="B2B1_2" pos="35.00" friendlyPos="true"/>
+      <detExit lane="B2B1_0" pos="100.00" friendlyPos="true"/>
+      <detExit lane="B2B1_1" pos="100.00" friendlyPos="true"/>
+	  <detExit lane="B2B1_2" pos="100.00" friendlyPos="true"/>
+    </entryExitDetector>
+
+	<entryExitDetector id="e3_4" freq="900" file="out_e3" timeThreshold="5.00" speedThreshold="5.00">
+      <detEntry lane="A1B1_0" pos="35.00" friendlyPos="true"/>
+      <detEntry lane="A1B1_1" pos="35.00" friendlyPos="true"/>
+	  <!-- <detEntry lane="A1B1_2" pos="35.00" friendlyPos="true"/> -->
+      <detExit lane="A1B1_0" pos="100.00" friendlyPos="true"/>
+      <detExit lane="A1B1_1" pos="100.00" friendlyPos="true"/>
+	  <!-- <detExit lane="A1B1_2" pos="100.00" friendlyPos="true"/> -->
+    </entryExitDetector>
+	
+
+</additional>

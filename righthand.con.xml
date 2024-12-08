@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-02 11:24:45 by Eclipse SUMO netconvert Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="inter.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="righthand"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="1"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<connections version="1.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+    <connection from="A1B1" to="B1B0" fromLane="0" toLane="0"/>
+    <connection from="A1B1" to="B1C1" fromLane="0" toLane="0"/>
+    <connection from="A1B1" to="B1C1" fromLane="1" toLane="1"/>
+    <connection from="A1B1" to="B1B2" fromLane="1" toLane="2"/>
+    <connection from="A1B1" to="B1A1" fromLane="1" toLane="1"/>
+
+    <connection from="B0B1" to="B1C1" fromLane="0" toLane="0"/>
+    <connection from="B0B1" to="B1B2" fromLane="0" toLane="0"/>
+    <connection from="B0B1" to="B1B2" fromLane="1" toLane="1"/>
+    <connection from="B0B1" to="B1B2" fromLane="2" toLane="2"/>
+    <connection from="B0B1" to="B1A1" fromLane="2" toLane="1"/>
+    <connection from="B0B1" to="B1B0" fromLane="2" toLane="2"/>
+
+    <connection from="B1A1" to="A1B1" fromLane="1" toLane="1"/>
+
+    <connection from="B1B0" to="B0B1" fromLane="2" toLane="2"/>
+
+    <connection from="B1B2" to="B2B1" fromLane="2" toLane="2"/>
+
+    <connection from="B1C1" to="C1B1" fromLane="1" toLane="1"/>
+
+    <connection from="B2B1" to="B1A1" fromLane="0" toLane="0"/>
+    <connection from="B2B1" to="B1B0" fromLane="0" toLane="0"/>
+    <connection from="B2B1" to="B1B0" fromLane="1" toLane="1"/>
+    <connection from="B2B1" to="B1B0" fromLane="2" toLane="2"/>
+    <connection from="B2B1" to="B1C1" fromLane="2" toLane="1"/>
+    <connection from="B2B1" to="B1B2" fromLane="2" toLane="2"/>
+
+    <connection from="C1B1" to="B1B2" fromLane="0" toLane="0"/>
+    <connection from="C1B1" to="B1A1" fromLane="0" toLane="0"/>
+    <connection from="C1B1" to="B1A1" fromLane="1" toLane="1"/>
+    <connection from="C1B1" to="B1B0" fromLane="1" toLane="2"/>
+    <connection from="C1B1" to="B1C1" fromLane="1" toLane="1"/>
+
+</connections>
